@@ -2,9 +2,11 @@
 
 namespace alex290\imagelink\lib;
 
+use alex290\imagelink\lib\ImageLnk\ImageLnk_URL;
+
 
 // ------------------------------------------------------------
-function ImageLnk_autoload($className)
+/*function ImageLnk_autoload($className)
 {
     $replaces = array(
         '_' => DIRECTORY_SEPARATOR,
@@ -30,7 +32,7 @@ ImageLnk_Config::static_initialize();
 foreach (glob(sprintf('%s/ImageLnk/Engine/*.php', dirname(__FILE__))) as $file) {
     include_once $file;
 }
-ImageLnk_Engine::push('ImageLnk_Engine_opengraph');
+ImageLnk_Engine::push('ImageLnk_Engine_opengraph');*/
 
 // ------------------------------------------------------------
 class ImageLnk

@@ -1,5 +1,7 @@
 <?php //-*- Mode: php; indent-tabs-mode: nil; -*-
 
+namespace alex290\imagelink\lib\ImageLnk;
+
 class ImageLnk_URL
 {
     public static function getRedirectedURL($url, $nest = 0)
