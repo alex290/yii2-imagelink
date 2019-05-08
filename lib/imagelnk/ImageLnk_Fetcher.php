@@ -40,7 +40,7 @@ class ImageLnk_Fetcher
         // --------------------------------------------------
         $config = self::getConfig();
         $config['follow_redirects'] = true;
-        $request = new HTTP_Request2($url, HTTP_Request2::METHOD_GET, $config);
+        $request = new \HTTP_Request2($url, \HTTP_Request2::METHOD_GET, $config);
         $request->setHeader('User-Agent', self::USER_AGENT);
 
         // For some sites (itmedia, ...), we need to set referer.
