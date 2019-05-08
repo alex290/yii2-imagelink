@@ -1,6 +1,8 @@
 <?php //-*- Mode: php; indent-tabs-mode: nil; -*-
 namespace alex290\imagelink\lib\imagelnk;
 
+use alex290\imagelink\lib\imagelnk\Engine\ImageLnk_Engine_opengraph;
+
 
 class ImageLnk_Engine
 {

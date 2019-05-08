@@ -12,7 +12,8 @@
     ],
     "require": {
         "yiisoft/yii2": "~2.0.0",
-        "symfony/yaml": "*"
+        "symfony/yaml": "*",
+        "pear/http_request2": "*"
     },
     "autoload": {
         "psr-4": {
