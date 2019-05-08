@@ -1,5 +1,7 @@
 <?php //-*- Mode: php; indent-tabs-mode: nil; -*-
-namespace alex290\imagelink\lib\ImageLnk;
+namespace alex290\imagelink\lib\imagelnk;
+
+
 class ImageLnk_Engine
 {
     private static $engines_ = array();

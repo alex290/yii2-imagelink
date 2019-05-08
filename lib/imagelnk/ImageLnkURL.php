@@ -1,8 +1,8 @@
 <?php //-*- Mode: php; indent-tabs-mode: nil; -*-
 
-namespace alex290\imagelink\lib\ImageLnk;
+namespace alex290\imagelink\lib\imagelnk;
 
-class ImageLnk_URL
+class ImageLnkURL
 {
     public static function getRedirectedURL($url, $nest = 0)
     {

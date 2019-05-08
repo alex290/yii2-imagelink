@@ -1,4 +1,6 @@
 <?php //-*- Mode: php; indent-tabs-mode: nil; Coding: utf-8; -*-
+namespace alex290\imagelink\lib\imagelnk;
+
 
 use \Symfony\Component\Yaml\Yaml;
 

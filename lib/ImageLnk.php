@@ -2,7 +2,9 @@
 
 namespace alex290\imagelink\lib;
 
-use alex290\imagelink\lib\ImageLnk\ImageLnk_URL;
+use alex290\imagelink\lib\imagelnk\ImageLnkURL;
+use alex290\imagelink\lib\imagelnk\ImageLnk_Engine;
+use alex290\imagelink\lib\imagelnk\ImageLnk_Config;
 
 
 // ------------------------------------------------------------
@@ -23,7 +25,7 @@ use alex290\imagelink\lib\ImageLnk\ImageLnk_URL;
         include_once $fileName;
     }
 }
-spl_autoload_register('ImageLnk_autoload');
+spl_autoload_register('ImageLnk_autoload');*/
 
 // ------------------------------------------------------------
 ImageLnk_Config::static_initialize();
@@ -32,14 +34,14 @@ ImageLnk_Config::static_initialize();
 foreach (glob(sprintf('%s/ImageLnk/Engine/*.php', dirname(__FILE__))) as $file) {
     include_once $file;
 }
-ImageLnk_Engine::push('ImageLnk_Engine_opengraph');*/
+ImageLnk_Engine::push('ImageLnk_Engine_opengraph');
 
 // ------------------------------------------------------------
 class ImageLnk
 {
     public static function getImageInfo($url)
     {
-        $url = ImageLnk_URL::getRedirectedURL($url);
+        $url = ImageLnkURL::getRedirectedURL($url);
         foreach (ImageLnk_Engine::getEngines() as $classname) {
             try {
                 $response = $classname::handle($url);

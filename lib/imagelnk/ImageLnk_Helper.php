@@ -1,4 +1,6 @@
 <?php //-*- Mode: php; indent-tabs-mode: nil; -*-
+namespace alex290\imagelink\lib\imagelnk;
+
 
 use Sunra\PhpSimple\HtmlDomParser;
 
